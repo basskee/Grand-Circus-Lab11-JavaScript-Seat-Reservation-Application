@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Theater Layout</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<!-- Seat request form -->
+	<div id="seat-form-content" class="hide">
+		<form id="myform" class="form-inline" role="form" name="submitForm">
+			<div class="form-group">
+			<input type="text" placeholder="Name" name="name">
+			<input type="text" placeholder="Email" name="email"> 
+			<button type="button" href="#">Submit</button>                              
+			</div>
+		</form>
+	</div>
+
+	<!-- End of Seat request form -->
+	<div class="container" id="wrapper">
+		<header>
+			<div id="brand">
+				<img src="images/amc.png" alt="amc logo">
+			</div>
+			<h1 id="page-title">Git Lab</h1>
+		</header>
+
+		<main>
+			<h2> Welcome to seat reservation!</h2>
+					<p> Please reserve your seating as follows: Red seats are not available. Green seats are availabe. Click on green seat and fill out form. Then hit submit.</p>
+			<div id="maincontainer">
+				<div class = "col-fixed row-4">	
+			<!-- 	Start of Form Hover seat 1: -->
+					<div class= "seat shadow "></div>
+			<!--   	End of Form Hover seat 1-->
+			<!-- 	Start of Form Hover seat 2: -->
+					<div class= "seat shadow "></div>
+			<!--   	End of Form Hover seat 2-->
+			<!-- 	Start of Form Hover seat 3: -->
+					<div class= "seat shadow "></div>
+			<!--   	End of Form Hover seat 3-->
+			<!-- 	Start of Form Hover seat 4: -->
+					<div class= "seat shadow"></div>
+				</div>
+				<div class = "col-fixed row-3" >
+					<div class= "seat na shadow"></div>
+					<div class= "seat na shadow "></div>
+					<div class= "seat na shadow"></div>
+					<div class= "seat shadow"></div>
+					<div class= "seat na shadow "></div>
+					<div class= "seat shadow"></div>
+				</div>
+				<div class = "col-fixed row-2" >
+					<div class= "seat shadow"></div>
+					<div class= "seat shadow"></div>
+					<div class= "seat shadow"></div>
+					<div class= "seat shadow "></div>
+					<div class= "seat na shadow"></div>
+					<div class= "seat shadow"></div>
+				</div>
+				<div class = "col-fixed row-1" >
+					<div class= "seat na shadow"></div>
+					<div class= "seat na shadow"></div>
+					<div class= "seat shadow"></div>
+					<div class= "seat na shadow"></div>
+					<div class= "seat shadow"></div>
+					<div class= "seat shadow"></div>
+					<div class= "seat shadow"></div>
+					<div class= "seat shadow"></div>
+				</div>
+			
+			
+
+			</div>
+		</main>
+
+				
+
+		<footer id="foot">
+			<div class "container footcontainer">
+				<div class="row">
+					<div class="row"></div>
+					<div class="col-md-4"><p>Contact Us</p></div>
+					<div class="col-md-4 coltwo"><p>Site Map</p></div>
+					<div class="col-md-4 colthree"><p>About</p></div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+<script src="script.js"> </script>
+
+</body>
+</html>

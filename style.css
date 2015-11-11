@@ -1,0 +1,189 @@
+
+
+/*======================
+========Font============
+=======================*/
+h1 {
+font-size: 	1.5em !important;
+margin: 5px 20px !important;
+color: #fff !important;
+}
+
+
+/*======================
+========Body============
+=======================*/
+
+body{
+
+	text-align: center;
+	background-color: #333;
+
+	background-image: url("images/stage.jpg");
+}
+
+#wrapper{
+	width:960px;
+	height:100%;
+	/*background-color: #333;*/
+	/*background-color:rgba(51,51,51, 0.5);*/
+	margin: 10px auto;
+	padding-top: 5px;
+
+}
+
+.shadow{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+
+/*======================
+========Header============
+=======================*/
+header{
+	text-align: center;
+	height: 150px;
+	border: solid thin black;
+	background-color:rgba(51,51,51, 0.6);
+}
+h1#page-title{
+text-align: right;
+
+}
+
+
+#brand {
+	text-align: center;
+	display:block;
+	margin:10px 20px 5px 20px;
+	max-width: 100%;
+}
+#brand img{
+	max-width: 100%;
+}
+
+/*======================
+========Nav============
+=======================*/
+
+nav ul{
+	list-style: none;
+
+}
+
+
+/*======================
+========Main============
+=======================*/
+
+#maincontainer{
+	background-color: #fff;
+	border:black thin solid;
+	max-width: 100%;
+	height:500px;
+	padding: 100px 15px 15px 15px;
+}
+
+
+.seat{
+	display: inline-block;
+	width: 75px;
+	height:75px;
+	background-color: green;
+
+}
+
+.seat:hover{
+	transform: scale(0.8);
+
+}
+/*Seat Taken Class*/
+
+.na{
+background-color: red;
+}
+
+/*======================
+===Form and Popover=====
+=======================*/
+
+.container-fluid{
+	padding: 10px !important;
+	margin: 10px !important;
+}
+
+ul.pop{
+	display:inline-block;
+}
+.pop a{
+	padding: 5px;
+	text-decoration: none;
+	color: #111;
+}
+.pop a:hover{
+text-decoration: none;
+	}
+
+
+.form-control {width:120px;}
+.popover {max-width:800px;}
+
+
+
+/*======================
+========Footer============
+=======================*/
+#foot{
+
+	background-color: #111;
+	margin: 5px auto 15px auto;
+	padding: 10px;
+	height:100%;
+	background-color:rgba(51,51,51, 0.6);
+}
+
+#foot p{
+	color: #fff;
+}
+
+.coltwo, .colthree{
+	border-left: thin #fff solid;
+}
+ /*========================
+ ======Media Query's======
+==========================*/
+@media screen and (max-width: 1200px){
+ #foot, body, #wrapper{
+    width:100%;
+    height:100%;
+}
+ .maincontainer {
+
+ }
+
+
+}
+
+ @media only screen and (max-width : 768px) {
+ 	body{
+ 	
+ 	}
+ 	.seat{
+ 		height:50px;
+ 		width: 50px;
+ 	}
+
+    }
+
+
+ @media only screen and (max-width : 510px) {
+ 	.seat{
+ 		height:30px;
+ 		width: 30px;
+ 	}
+ 	body, #wrapper, footer{
+ 		min-width: 340px !important;
+ 	}
+ }
